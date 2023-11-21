@@ -25,13 +25,7 @@
       "name": "charles-cook-book",
       "url": "/",
       "description": "Charley New Bee Online Cookbook",
-      "icons": [
-        {
-          "src": "/img/logo98px.png",
-          "sizes": "98x100",
-          "type": "image/png"
-        }
-      ]
+      "icon": "/img/logo98px.png"         
     }
     
   ],

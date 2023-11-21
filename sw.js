@@ -9,8 +9,7 @@ self.addEventListener('install', event => {
       '/',
       '/*',
       '/sw.js',
-      '/index.html',
-      '/manifest.json',
+      '/index.html',      
       '/search.json'
     ]);
   })());

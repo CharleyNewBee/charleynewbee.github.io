@@ -8,7 +8,7 @@ self.addEventListener('install', event => {
     cache.addAll([
       '/',
       '/*',
-      '/js/sw.js',
+      '/sw.js',
       '/index.html',
       '/manifest.json',
       '/search.json'

@@ -1,4 +1,5 @@
 const CACHE_NAME = `charles-cook-book-v1`;
+const offlineFallbackPage = "offline.html";
 
 // Use the install event to pre-cache all initial resources.
 self.addEventListener('install', event => {
@@ -14,6 +15,10 @@ self.addEventListener('install', event => {
     ]);
   })());
 });
+
+self.addEventListener('activate', event => {
+    event.waitUntil(self.clients.claim());
+  });
 
 self.addEventListener('fetch', event => {
   event.respondWith((async () => {
@@ -32,8 +37,11 @@ self.addEventListener('fetch', event => {
           cache.put(event.request, fetchResponse.clone());
           return fetchResponse;
         } catch (e) {
-          // The network failed.
+            
+            const cachedResp = await cache.match(offlineFallbackPage);
+            return cachedResp;
         }
     }
   })());
 });
+

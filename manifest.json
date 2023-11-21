@@ -1,0 +1,36 @@
+{
+  "background_color": "#ffffff",
+  "description": "The online cookbook of Charles New Bee",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "Charles Cook Book",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "Charles Cook Book",
+  "start_url": "/",
+  "theme_color": "#ffffff",
+  "categories": [
+    "lifestyle"
+  ],
+  "screenshots": [],
+  "icons": [
+    {
+      "src": "/img/logo512px.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "charles-cook-book",
+      "url": "/",
+      "description": "Charley New Bee Online Cookbook"
+    }
+  ],
+  "id": "charles-cook-book",
+  "lang": "en",
+  "display_override": [
+    "window-controls-overlay",
+    "standalone"
+  ]
+}

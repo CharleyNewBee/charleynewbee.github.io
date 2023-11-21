@@ -21,6 +21,9 @@ self.addEventListener('activate', event => {
 
 self.addEventListener('fetch', event => {
   event.respondWith((async () => {
+    if(!(event.request.url.startsWith('chrome-extension') ||
+    event.request.url.includes('extension') ||
+    !(event.request.url.indexOf('http') === 0)))return;
     const cache = await caches.open(CACHE_NAME);
 
     // Get the resource from the cache.

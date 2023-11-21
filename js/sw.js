@@ -37,7 +37,7 @@ self.addEventListener('fetch', event => {
           cache.put(event.request, fetchResponse.clone());
           return fetchResponse;
         } catch (e) {
-            
+            const cache = await caches.open(CACHE_NAME);
             const cachedResp = await cache.match(offlineFallbackPage);
             return cachedResp;
         }

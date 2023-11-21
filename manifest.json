@@ -16,7 +16,7 @@
   "icons": [
     {
       "src": "/img/logo512px.png",
-      "sizes": "512x512",
+      "sizes": "612x622",
       "type": "image/png"
     }
   ],
@@ -24,8 +24,16 @@
     {
       "name": "charles-cook-book",
       "url": "/",
-      "description": "Charley New Bee Online Cookbook"
+      "description": "Charley New Bee Online Cookbook",
+      "icons": [
+        {
+          "src": "/img/logo98px.png",
+          "sizes": "98x100",
+          "type": "image/png"
+        }
+      ],
     }
+    
   ],
   "id": "charles-cook-book",
   "lang": "en",
